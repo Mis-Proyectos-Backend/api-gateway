@@ -29,6 +29,11 @@ spring:
               uri: lb://credit-service
               predicates:
                 - Path=/credits/**
+
+            - id: movement-service
+              uri: lb://movement-service
+              predicates:
+                - Path=/movements/**
 eureka:
   client:
     service-url:
