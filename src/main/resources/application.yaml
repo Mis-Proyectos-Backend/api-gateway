@@ -44,6 +44,11 @@ spring:
               uri: lb://yanki-service
               predicates:
                 - Path=/api/yanki/**
+
+            - id: movement-service
+              uri: lb://movement-service
+              predicates:
+                - Path=/reports/**
 eureka:
   client:
     service-url:
